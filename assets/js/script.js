@@ -9,7 +9,7 @@ filterButtons.forEach((button) => {
     button.classList.add("active");
 
     projectCards.forEach((card) => {
-      const categories = card.getAttribute("data-category");
+      const categories = card.getAttribute("data-category").split(" ");
 
       if (selectedFilter === "all" || categories.includes(selectedFilter)) {
         card.classList.remove("hide");

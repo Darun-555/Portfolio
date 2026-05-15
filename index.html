@@ -3,210 +3,296 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Darun Kaarthik | Cybersecurity Portfolio</title>
+  <title>Darun Kaarthik Asokan Portfolio</title>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
   <header class="hero">
     <nav class="navbar">
-      <div class="logo">Darun Kaarthik</div>
+      <!-- <div class="logo">Darun Kaarthik Asokan</div> -->
       <div class="nav-links">
-        <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
+        <a href="experience.html">Experience</a>
       </div>
     </nav>
 
-    <div class="hero-content">
-      <p class="eyebrow">Entry-Level Cybersecurity Portfolio</p>
-      <h1>SOC Analyst Aspirant focused on detection, log analysis, and blue-team projects.</h1>
-      <p class="hero-text">
-        MSc Applied Cybersecurity student building hands-on labs in honeypots,
-        SIEM monitoring, attack simulation, and incident triage.
-      </p>
+    <div class="hero-layout">
+      <div class="hero-content">
+        <p class="eyebrow">Hi Everyone!</p>
 
-      <div class="hero-buttons">
-        <a class="btn primary" href="#projects">View Projects</a>
-        <a class="btn secondary" href="assets/docs/Darun-Kaarthik-CV.pdf" target="_blank">Download CV</a>
+        <h1>
+          Darun Kaarthik Asokan
+        </h1>
+
+        <p class="hero-title">
+          SOC Analyst Aspirant | Cybersecurity Student | Blue-Team Learner
+        </p>
+
+        <p class="hero-text">
+          Motivated MSc Applied Cybersecurity student seeking an internship or entry-level SOC Analyst L1 role. Hands-on
+          experience in Linux environments, log analysis, Wazuh, Wireshark, Cowrie honeypot, threat intelligence, and attack
+          simulation. Currently pursuing TryHackMe Security Analyst Level 1 training with exposure to SIEM concepts, Splunk-based
+          alert triage, incident investigation, phishing analysis, and escalation workflows. Strong interest in security monitoring,
+          incident response, and SOC operations.
+
+        </p>
+
+        <div class="hero-buttons">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn secondary" href="assets/docs/Darun_Kaarthik_CV.pdf" target="_blank">Download CV</a>
+        </div>
+      </div>
+
+      <div class="profile-card" aria-label="Profile picture placeholder">
+        <img class="profile-photo" src="assets/images/myphoto.jpg" alt="Darun Kaarthik Asokan">
       </div>
     </div>
   </header>
 
   <main>
-    <section id="about" class="section">
-      <h2>About Me</h2>
-      <p>
-        I am an MSc Applied Cybersecurity student preparing for entry-level SOC and
-        blue-team opportunities. My focus is on security monitoring, log investigation,
-        honeypot telemetry, and practical detection workflows.
-      </p>
-    </section>
-
     <section id="projects" class="section">
-      <h2>Featured Projects</h2>
-       <p class="section-intro">
-          A selection of cybersecurity labs, software projects, cryptography work,
+      <div class="projects-header">
+        <h2>Featured Projects</h2>
+        <p class="section-intro">
+          Explore my cybersecurity labs, software projects, cryptography work,
           and hands-on technical builds that reflect my learning and career direction.
         </p>
 
-  <div class="filter-bar">
-    <button class="filter-btn active" data-filter="all">All</button>
-    <button class="filter-btn" data-filter="cybersecurity">Cybersecurity</button>
-    <button class="filter-btn" data-filter="software">Software</button>
-    <button class="filter-btn" data-filter="cryptography">Cryptography</button>
-    <button class="filter-btn" data-filter="labs">Learning Labs</button>
-  </div>
+        <div class="filter-bar" aria-label="Project filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="cybersecurity">Cybersecurity</button>
+          <button class="filter-btn" data-filter="software">Software</button>
+          <button class="filter-btn" data-filter="cryptography">Cryptography</button>
+          <button class="filter-btn" data-filter="labs">Learning Labs</button>
+        </div>
+      </div>
 
-  <div class="project-grid filter-grid">
+      <div class="project-grid filter-grid">
 
-    <article class="project-card filter-item" data-category="cybersecurity labs">
-      <div class="project-badges">
-        <span>Cybersecurity</span>
-        <span>SIEM</span>
-      </div>
-      <h3>Cowrie Honeypot with Wazuh Monitoring</h3>
-      <p>
-        Built a honeypot lab to capture SSH attacks, attacker commands,
-        brute-force attempts, and SIEM-relevant telemetry.
-      </p>
-      <div class="project-actions">
-        <a href="projects/cowrie-wazuh.html">Case Study</a>
-        <a href="https://github.com/Darun-555/cowrie-wazuh-honeypot-lab" target="_blank">GitHub</a>
-      </div>
-    </article>
+        <article class="project-card filter-item" data-category="cybersecurity labs">
+          <div class="project-badges">
+            <span>Cybersecurity</span>
+            <span>SIEM</span>
+          </div>
+          <h3>Cowrie Honeypot with Wazuh Monitoring</h3>
+          <p>
+            Built a honeypot lab to capture SSH attacks, attacker commands,
+            brute-force attempts, and SIEM-relevant telemetry.
+          </p>
+          <div class="project-actions">
+            <a href="projects/cowrie-wazuh.html">Case Study</a>
+            <a href="https://github.com/Darun-555/cowrie-wazuh-honeypot-lab" target="_blank">GitHub</a>
+          </div>
+        </article>
 
-    <article class="project-card filter-item" data-category="cybersecurity labs">
-      <div class="project-badges">
-        <span>SOC</span>
-        <span>Learning Lab</span>
-      </div>
-      <h3>SOC Alert Triage Lab - TryHackMe</h3>
-      <p>
-        Practiced alert investigation, suspicious login review, phishing indicators,
-        and escalation-oriented SOC workflows using Splunk-style analysis.
-      </p>
-      <div class="project-actions">
-        <a href="projects/tryhackme-soc-triage.html">Lab Summary</a>
-      </div>
-    </article>
+        <article class="project-card filter-item" data-category="cybersecurity labs">
+          <div class="project-badges">
+            <span>SOC</span>
+            <span>Learning Lab</span>
+          </div>
+          <h3>SOC Alert Triage Lab - TryHackMe</h3>
+          <p>
+            Practiced alert investigation, suspicious login review, phishing indicators,
+            and escalation-oriented SOC workflows using Splunk-style analysis.
+          </p>
+          <div class="project-actions">
+            <a href="projects/tryhackme-soc-triage.html">Lab Summary</a>
+          </div>
+        </article>
 
-    <article class="project-card filter-item" data-category="cybersecurity software">
-      <div class="project-badges">
-        <span>Python</span>
-        <span>Networking</span>
-      </div>
-      <h3>Python Network Scanner</h3>
-      <p>
-        A lightweight Python-based scanner that demonstrates networking fundamentals,
-        port visibility, and basic host discovery concepts.
-      </p>
-      <div class="project-actions">
-        <a href="https://github.com/Darun-555/Python_Network_Scanner" target="_blank">GitHub</a>
-      </div>
-    </article>
+        <article class="project-card filter-item" data-category="cybersecurity software">
+          <div class="project-badges">
+            <span>Python</span>
+            <span>Networking</span>
+          </div>
+          <h3>Python Network Scanner</h3>
+          <p>
+            A lightweight Python-based scanner that demonstrates networking fundamentals,
+            port visibility, and basic host discovery concepts.
+          </p>
+          <div class="project-actions">
+            <a href="https://github.com/Darun-555/Python_Network_Scanner" target="_blank">GitHub</a>
+          </div>
+        </article>
 
-    <article class="project-card filter-item" data-category="cryptography cybersecurity">
-      <div class="project-badges">
-        <span>Cryptography</span>
-        <span>Python</span>
-      </div>
-      <h3>Merkle-Hellman Knapsack Encryption</h3>
-      <p>
-        Implemented the classical Merkle-Hellman public-key cryptosystem to explore
-        encryption, key generation, and decryption logic.
-      </p>
-      <div class="project-actions">
-        <a href="https://github.com/Darun-555/merkle-hellman-knapsack-encryption" target="_blank">GitHub</a>
-      </div>
-    </article>
+        <article class="project-card filter-item" data-category="cryptography cybersecurity">
+          <div class="project-badges">
+            <span>Cryptography</span>
+            <span>Python</span>
+          </div>
+          <h3>Merkle-Hellman Knapsack Encryption</h3>
+          <p>
+            Implemented the classical Merkle-Hellman public-key cryptosystem to explore
+            encryption, key generation, and decryption logic.
+          </p>
+          <div class="project-actions">
+            <a href="https://github.com/Darun-555/merkle-hellman-knapsack-encryption" target="_blank">GitHub</a>
+          </div>
+        </article>
 
-    <article class="project-card filter-item" data-category="software">
-      <div class="project-badges">
-        <span>Python</span>
-        <span>Desktop App</span>
-      </div>
-      <h3>Python Document Tracker</h3>
-      <p>
-        A desktop-oriented document management application demonstrating Python GUI work,
-        that uses a json data file to analyse statistics.
-      </p>
-      <div class="project-actions">
-        <a href="https://github.com/Darun-555/Python_Document_Tracker" target="_blank">GitHub</a>
-      </div>
-    </article>
+        <article class="project-card filter-item" data-category="software">
+          <div class="project-badges">
+            <span>Python</span>
+            <span>Desktop App</span>
+          </div>
+          <h3>Python Document Tracker</h3>
+          <p>
+            A desktop-oriented document management application demonstrating Python GUI work,
+            that uses a json data file to analyse statistics.
+          </p>
+          <div class="project-actions">
+            <a href="https://github.com/Darun-555/Python_Document_Tracker" target="_blank">GitHub</a>
+          </div>
+        </article>
 
-    <article class="project-card filter-item" data-category="software">
-      <div class="project-badges">
-        <span>C#</span>
-        <span>Desktop App</span>
-      </div>
-      <h3>Simple Web Browser in C#</h3>
-      <p>
-        A Windows desktop browser project built in C#, including bookmarks,
-        browser history, and interface components.
-      </p>
-      <div class="project-actions">
-        <a href="https://github.com/Darun-555/simple-web-browser-csharp" target="_blank">GitHub</a>
-      </div>
-    </article>
+        <article class="project-card filter-item" data-category="software">
+          <div class="project-badges">
+            <span>C#</span>
+            <span>Desktop App</span>
+          </div>
+          <h3>Simple Web Browser in C#</h3>
+          <p>
+            A Windows desktop browser project built in C#, including bookmarks,
+            browser history, and interface components.
+          </p>
+          <div class="project-actions">
+            <a href="https://github.com/Darun-555/simple-web-browser-csharp" target="_blank">GitHub</a>
+          </div>
+        </article>
 
-    <article class="project-card filter-item" data-category="software">
-      <div class="project-badges">
-        <span>Application</span>
-        <span>Programming</span>
-      </div>
-      <h3>Hospital App</h3>
-      <p>
-        Developed a hospital management application that demonstrates CRUD operations, to assist with  patient registration, 
-        ward management, admissions, and to keep track of doctor notes.
-        The app uses Node.js for the backend and mongoDB for data storage.
-      </p>
-      <div class="project-actions">
-        <a href="https://github.com/Darun-555/Hospital-APP" target="_blank">GitHub</a>
-      </div>
-    </article>
+        <article class="project-card filter-item" data-category="software">
+          <div class="project-badges">
+            <span>App</span>
+            <span>Programming</span>
+            <span>Node.js</span>
+          </div>
+          <h3>Hospital App</h3>
+          <p>
+            Developed a hospital management application that demonstrates CRUD operations, to assist with  patient registration, 
+            ward management, admissions, and to keep track of doctor notes.
+          </p>
+          <div class="project-actions">
+            <a href="https://github.com/Darun-555/Hospital-APP" target="_blank">GitHub</a>
+          </div>
+        </article>
 
-  </div>
-</section>
+      </div>
+    </section>
 
     <section id="skills" class="section">
       <h2>Core Skills</h2>
 
       <div class="skills-grid">
         <div class="skill-box">
-          <h3>SOC & Detection</h3>
-          <p>Alert triage, log analysis, incident investigation, honeypots, MITRE ATT&CK basics</p>
+          <div class="skill-header">
+            <svg class="skill-icon" viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M24 5l15 6v11c0 10-6.4 17.6-15 21-8.6-3.4-15-11-15-21V11l15-6z" />
+              <path d="M17 24l4.5 4.5L31 18" />
+            </svg>
+            <h3>SOC & Detection</h3>
+          </div>
+          <p>
+            Practical blue-team fundamentals focused on alert review, log investigation,
+            detection thinking, and incident escalation.
+          </p>
+          <div class="tool-list" aria-label="SOC and detection skills">
+            <span class="tool-chip">Alert Triage</span>
+            <span class="tool-chip">Log Analysis</span>
+            <span class="tool-chip">Incident Response</span>
+            <span class="tool-chip">Threat Intelligence</span>
+            <span class="tool-chip icon-chip">MITRE ATT&CK</span>
+          </div>
         </div>
 
         <div class="skill-box">
-          <h3>Tools</h3>
-          <p>Splunk, Wazuh, Wireshark, Cowrie, Snort, Linux</p>
+          <div class="skill-header">
+            <svg class="skill-icon" viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M14 15h20" />
+              <path d="M10 24h28" />
+              <path d="M16 33h16" />
+              <circle cx="14" cy="15" r="4" />
+              <circle cx="34" cy="24" r="4" />
+              <circle cx="16" cy="33" r="4" />
+            </svg>
+            <h3>Security Tools</h3>
+          </div>
+          <p>
+            Hands-on exposure to monitoring, packet analysis, honeypot telemetry,
+            and Linux-based security lab environments.
+          </p>
+          <div class="tool-list" aria-label="Security tools">
+            <span class="tool-chip icon-chip">
+              <img src="assets/images/tools/Splunk_logo.svg" alt="">
+              Splunk
+            </span>
+            <span class="tool-chip icon-chip">
+              <img src="assets/images/tools/wazuh.svg" alt="">
+              Wazuh
+            </span>
+            <span class="tool-chip icon-chip">
+              <img src="assets/images/tools/elastic.svg" alt="">
+              Elastic
+            </span>
+            <span class="tool-chip icon-chip">
+              <img src="assets/images/tools/snort.svg" alt="">
+              Snort
+            </span>
+            <span class="tool-chip icon-chip">
+              <img src="assets/images/tools/wireshark.svg" alt="">
+              Wireshark
+            </span>
+            <span class="tool-chip icon-chip">
+              <img src="assets/images/tools/cowrie.svg" alt="">
+              Cowrie
+            </span>
+          </div>
         </div>
 
         <div class="skill-box">
-          <h3>Scripting</h3>
-          <p>Python, Bash, SQL, Git</p>
+          <div class="skill-header">
+            <svg class="skill-icon" viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M18 16l-8 8 8 8" />
+              <path d="M30 16l8 8-8 8" />
+              <path d="M27 12l-6 24" />
+            </svg>
+            <h3>Scripting & Systems</h3>
+          </div>
+          <p>
+            Building automation and technical foundations through scripting,
+            command-line workflows, databases, and version control.
+          </p>
+          <div class="tool-list" aria-label="Scripting and systems skills">
+            <span class="tool-chip icon-chip">
+              <img src="assets/images/tools/python.svg" alt="">
+              Python
+            </span>
+            <span class="tool-chip icon-chip">
+              <img src="assets/images/tools/bash.svg" alt="">
+              Bash
+            </span>
+            <span class="tool-chip icon-chip">
+              <img src="assets/images/tools/Sql.svg" alt="">
+              SQL
+            </span>
+            <span class="tool-chip icon-chip">
+              <img src="assets/images/tools/linux.svg" alt="">
+              Linux
+            </span>
+            <span class="tool-chip icon-chip">
+              <img src="assets/images/tools/git.svg" alt="">
+              Git
+            </span>
+            <span class="tool-chip">Networking</span>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <section class="section process">
-      <h2>How I Approach Security Projects</h2>
-      <div class="process-grid">
-        <div>1. Simulate attacks</div>
-        <div>2. Capture logs</div>
-        <div>3. Investigate events</div>
-        <div>4. Document findings</div>
       </div>
     </section>
 
     <section id="contact" class="section contact">
       <h2>Contact</h2>
-      <p>
-        Open to cybersecurity internships, SOC Analyst L1 roles, and blue-team opportunities.
-      </p>
       <div class="contact-links">
         <a href="mailto:darunkaarthik@gmail.com">Email</a>
         <a href="https://www.linkedin.com/in/darun-kaarthik-868592268/" target="_blank">LinkedIn</a>
@@ -216,7 +302,7 @@
   </main>
 
   <footer>
-    <p>© 2026 Darun Kaarthik Asokan</p>
+    <p>&copy; 2026 Darun Kaarthik Asokan</p>
   </footer>
 
   <script src="assets/js/script.js"></script>
