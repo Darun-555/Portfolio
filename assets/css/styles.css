@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0b1020;
+  color: #e8eefc;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hero {
+  min-height: 100vh;
+  padding: 30px 8%;
+  background:
+    radial-gradient(circle at top right, rgba(0, 255, 200, 0.12), transparent 35%),
+    radial-gradient(circle at bottom left, rgba(0, 140, 255, 0.12), transparent 35%),
+    #0b1020;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #7df9ff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: #c9d6f0;
+}
+
+.hero-content {
+  max-width: 850px;
+  margin-top: 120px;
+}
+
+.eyebrow {
+  color: #7df9ff;
+  font-weight: bold;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero h1 {
+  font-size: 3.3rem;
+  line-height: 1.15;
+  margin-bottom: 22px;
+}
+
+.hero-text {
+  font-size: 1.2rem;
+  max-width: 720px;
+  color: #c9d6f0;
+  margin-bottom: 32px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 24px;
+  border-radius: 999px;
+  font-weight: bold;
+}
+
+.primary {
+  background: #7df9ff;
+  color: #07111f;
+}
+
+.secondary {
+  border: 1px solid #7df9ff;
+  color: #7df9ff;
+}
+
+.section {
+  padding: 90px 8%;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 28px;
+  color: #7df9ff;
+}
+
+.section p {
+  max-width: 850px;
+  color: #d3def4;
+}
+
+.project-grid,
+.skills-grid,
+.process-grid {
+  display: grid;
+  gap: 24px;
+  margin-top: 28px;
+}
+
+.project-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.skills-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.process-grid {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.project-card,
+.skill-box,
+.process-grid div {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(125, 249, 255, 0.18);
+  border-radius: 18px;
+  padding: 24px;
+  backdrop-filter: blur(8px);
+}
+
+.project-card h3,
+.skill-box h3 {
+  margin-bottom: 14px;
+  color: #ffffff;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 16px;
+  color: #7df9ff;
+  font-weight: bold;
+}
+
+.contact-links {
+  display: flex;
+  gap: 18px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.contact-links a {
+  border: 1px solid rgba(125, 249, 255, 0.4);
+  padding: 12px 18px;
+  border-radius: 999px;
+}
+
+footer {
+  padding: 28px 8%;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #9fb0d1;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .hero-content {
+    margin-top: 80px;
+  }
+
+  .hero h1 {
+    font-size: 2.35rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
