@@ -7,33 +7,102 @@
   <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 <body>
-  <main class="section">
-    <h1>Cowrie Honeypot with Wazuh SIEM Monitoring</h1>
-    <p>
-      A hands-on cybersecurity lab focused on SSH honeypot deployment,
-      attacker behavior simulation, and log-based detection workflows.
-    </p>
 
-    <h2>What I Built</h2>
-    <p>
-      I deployed a Cowrie honeypot in a controlled virtual lab, simulated attacker
-      behaviors from Kali Linux, and incorporated SIEM-style monitoring using Wazuh.
-    </p>
+  <main class="case-study">
+    <a class="back-link" href="../index.html">← Back to Portfolio</a>
 
-    <h2>Attack Scenarios</h2>
-    <p>
-      SSH brute-force attempts, credential harvesting, post-exploitation commands,
-      automated bot activity, and malware download attempt simulation.
-    </p>
+    <section class="case-hero">
+      <p class="eyebrow">Featured Cybersecurity Project</p>
+      <h1>Cowrie Honeypot with Wazuh SIEM Monitoring</h1>
+      <p>
+        A controlled blue-team lab designed to study attacker behavior,
+        simulate SSH-based intrusions, and analyze security telemetry through
+        honeypot logs and SIEM monitoring.
+      </p>
 
-    <h2>Tools Used</h2>
-    <p>
-      Cowrie, Kali Linux, Ubuntu, Wazuh, Bash, Linux logs.
-    </p>
+      <div class="tag-row">
+        <span>Cowrie</span>
+        <span>Wazuh</span>
+        <span>Kali Linux</span>
+        <span>Ubuntu</span>
+        <span>Threat Detection</span>
+      </div>
+    </section>
 
-    <p style="margin-top: 30px;">
-      <a class="btn primary" href="../index.html">Back to Portfolio</a>
-    </p>
+    <section class="case-section">
+      <h2>Project Overview</h2>
+      <p>
+        I deployed a Cowrie SSH honeypot inside a virtualized Linux lab and used
+        Kali Linux to simulate attacker interactions. The project explored brute-force attempts,
+        credential harvesting, post-login attacker behavior, bot-style automated commands,
+        and malware download attempts.
+      </p>
+    </section>
+
+    <section class="case-section">
+      <h2>Objectives</h2>
+      <div class="detail-grid">
+        <div class="detail-card">Capture realistic SSH attack behavior</div>
+        <div class="detail-card">Analyze attacker commands and intent</div>
+        <div class="detail-card">Forward and review logs in Wazuh</div>
+        <div class="detail-card">Document blue-team observations</div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <h2>Lab Architecture</h2>
+      <img class="case-image" src="../assets/images/cowrie/cowrie-architecture.png" alt="Cowrie lab architecture diagram">
+    </section>
+
+    <section class="case-section">
+      <h2>Attack Scenarios Demonstrated</h2>
+      <div class="detail-grid">
+        <div class="detail-card">SSH brute-force attempts</div>
+        <div class="detail-card">Credential harvesting</div>
+        <div class="detail-card">Post-exploitation shell commands</div>
+        <div class="detail-card">Automated bot-style actions</div>
+        <div class="detail-card">Malware download attempt simulation</div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <h2>Evidence from the Lab</h2>
+
+      <div class="image-grid">
+        <figure>
+          <img src="../assets/images/cowrie/brute-force-logs.png" alt="Cowrie brute force log example">
+          <figcaption>Brute-force and login-related telemetry.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="../assets/images/cowrie/wazuh-alerts.png" alt="Wazuh alert screenshot">
+          <figcaption>Wazuh alert visibility for honeypot events.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="../assets/images/cowrie/attacker-commands.png" alt="Captured attacker commands">
+          <figcaption>Captured attacker command activity inside the honeypot.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <h2>Key Security Learnings</h2>
+      <ul class="case-list">
+        <li>How attackers test weak SSH credentials</li>
+        <li>Why command telemetry matters after access is gained</li>
+        <li>How honeypot logs can support threat detection</li>
+        <li>How SIEM tooling improves security visibility</li>
+      </ul>
+    </section>
+
+    <section class="case-section">
+      <div class="hero-buttons">
+        <a class="btn primary" href="https://github.com/Darun-555/cowrie-wazuh-honeypot-lab" target="_blank">View GitHub Repository</a>
+        <a class="btn secondary" href="../index.html">Return Home</a>
+      </div>
+    </section>
   </main>
+
 </body>
 </html>

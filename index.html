@@ -46,27 +46,130 @@
 
     <section id="projects" class="section">
       <h2>Featured Projects</h2>
+       <p class="section-intro">
+          A selection of cybersecurity labs, software projects, cryptography work,
+          and hands-on technical builds that reflect my learning and career direction.
+        </p>
 
-      <div class="project-grid">
-        <article class="project-card">
-          <h3>Cowrie Honeypot with Wazuh SIEM Monitoring</h3>
-          <p>
-            Built a controlled SSH honeypot lab to simulate brute-force attacks,
-            credential harvesting, bot-like behavior, and malware download attempts.
-          </p>
-          <a href="projects/cowrie-wazuh.html">View Case Study</a>
-        </article>
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="cybersecurity">Cybersecurity</button>
+    <button class="filter-btn" data-filter="software">Software</button>
+    <button class="filter-btn" data-filter="cryptography">Cryptography</button>
+    <button class="filter-btn" data-filter="labs">Learning Labs</button>
+  </div>
 
-        <article class="project-card">
-          <h3>SOC Alert Triage Lab with Splunk</h3>
-          <p>
-            Practiced alert investigation using Splunk searches, event filtering,
-            suspicious login review, and escalation-style SOC workflows.
-          </p>
-          <a href="projects/splunk-soc-lab.html">View Case Study</a>
-        </article>
+  <div class="project-grid filter-grid">
+
+    <article class="project-card filter-item" data-category="cybersecurity labs">
+      <div class="project-badges">
+        <span>Cybersecurity</span>
+        <span>SIEM</span>
       </div>
-    </section>
+      <h3>Cowrie Honeypot with Wazuh Monitoring</h3>
+      <p>
+        Built a honeypot lab to capture SSH attacks, attacker commands,
+        brute-force attempts, and SIEM-relevant telemetry.
+      </p>
+      <div class="project-actions">
+        <a href="projects/cowrie-wazuh.html">Case Study</a>
+        <a href="https://github.com/Darun-555/cowrie-wazuh-honeypot-lab" target="_blank">GitHub</a>
+      </div>
+    </article>
+
+    <article class="project-card filter-item" data-category="cybersecurity labs">
+      <div class="project-badges">
+        <span>SOC</span>
+        <span>Learning Lab</span>
+      </div>
+      <h3>SOC Alert Triage Lab - TryHackMe</h3>
+      <p>
+        Practiced alert investigation, suspicious login review, phishing indicators,
+        and escalation-oriented SOC workflows using Splunk-style analysis.
+      </p>
+      <div class="project-actions">
+        <a href="projects/tryhackme-soc-triage.html">Lab Summary</a>
+      </div>
+    </article>
+
+    <article class="project-card filter-item" data-category="cybersecurity software">
+      <div class="project-badges">
+        <span>Python</span>
+        <span>Networking</span>
+      </div>
+      <h3>Python Network Scanner</h3>
+      <p>
+        A lightweight Python-based scanner that demonstrates networking fundamentals,
+        port visibility, and basic host discovery concepts.
+      </p>
+      <div class="project-actions">
+        <a href="https://github.com/Darun-555/Python_Network_Scanner" target="_blank">GitHub</a>
+      </div>
+    </article>
+
+    <article class="project-card filter-item" data-category="cryptography cybersecurity">
+      <div class="project-badges">
+        <span>Cryptography</span>
+        <span>Python</span>
+      </div>
+      <h3>Merkle-Hellman Knapsack Encryption</h3>
+      <p>
+        Implemented the classical Merkle-Hellman public-key cryptosystem to explore
+        encryption, key generation, and decryption logic.
+      </p>
+      <div class="project-actions">
+        <a href="https://github.com/Darun-555/merkle-hellman-knapsack-encryption" target="_blank">GitHub</a>
+      </div>
+    </article>
+
+    <article class="project-card filter-item" data-category="software">
+      <div class="project-badges">
+        <span>Python</span>
+        <span>Desktop App</span>
+      </div>
+      <h3>Python Document Tracker</h3>
+      <p>
+        A desktop-oriented document management application demonstrating Python GUI work,
+        that uses a json data file to analyse statistics.
+      </p>
+      <div class="project-actions">
+        <a href="https://github.com/Darun-555/Python_Document_Tracker" target="_blank">GitHub</a>
+      </div>
+    </article>
+
+    <article class="project-card filter-item" data-category="software">
+      <div class="project-badges">
+        <span>C#</span>
+        <span>Desktop App</span>
+      </div>
+      <h3>Simple Web Browser in C#</h3>
+      <p>
+        A Windows desktop browser project built in C#, including bookmarks,
+        browser history, and interface components.
+      </p>
+      <div class="project-actions">
+        <a href="https://github.com/Darun-555/simple-web-browser-csharp" target="_blank">GitHub</a>
+      </div>
+    </article>
+
+    <article class="project-card filter-item" data-category="software">
+      <div class="project-badges">
+        <span>Application</span>
+        <span>Programming</span>
+      </div>
+      <h3>Hospital App</h3>
+      <p>
+        Developed a hospital management application that demonstrates CRUD operations, to assist with  patient registration, 
+        ward management, admissions, and to keep track of doctor notes.
+        The app uses Node.js for the backend and mongoDB for data storage.
+      </p>
+      <div class="project-actions">
+        <a href="https://github.com/Darun-555/Hospital-APP" target="_blank">GitHub</a>
+      </div>
+    </article>
+
+  </div>
+</section>
 
     <section id="skills" class="section">
       <h2>Core Skills</h2>
