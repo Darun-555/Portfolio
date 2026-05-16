@@ -51,7 +51,11 @@
 
     <section class="case-section">
       <h2>Lab Architecture</h2>
-      <img class="case-image" src="../assets/images/cowrie/cowrie-architecture.png" alt="Cowrie lab architecture diagram">
+      <figure class="case-figure">
+        <button class="image-zoom-trigger" type="button" data-full="../assets/images/cowrie/Lab_diagram.png" data-caption="Cowrie lab architecture diagram">
+          <img class="case-image" src="../assets/images/cowrie/Lab_diagram.png" alt="Cowrie lab architecture diagram">
+        </button>
+      </figure>
     </section>
 
     <section class="case-section">
@@ -70,17 +74,23 @@
 
       <div class="image-grid">
         <figure>
-          <img src="../assets/images/cowrie/brute-force-logs.png" alt="Cowrie brute force log example">
+          <button class="image-zoom-trigger" type="button" data-full="../assets/images/cowrie/bruteforce-cowrie.jpg" data-caption="Brute-force and login-related telemetry.">
+            <img src="../assets/images/cowrie/bruteforce-cowrie.jpg" alt="Cowrie brute force log example">
+          </button>
           <figcaption>Brute-force and login-related telemetry.</figcaption>
         </figure>
 
         <figure>
-          <img src="../assets/images/cowrie/wazuh-alerts.png" alt="Wazuh alert screenshot">
+          <button class="image-zoom-trigger" type="button" data-full="../assets/images/cowrie/bruteforce-failed-hydra-alerts.jpg" data-caption="Wazuh alert visibility for honeypot events.">
+            <img src="../assets/images/cowrie/bruteforce-failed-hydra-alerts.jpg" alt="Wazuh alert screenshot">
+          </button>
           <figcaption>Wazuh alert visibility for honeypot events.</figcaption>
         </figure>
 
         <figure>
-          <img src="../assets/images/cowrie/attacker-commands.png" alt="Captured attacker commands">
+          <button class="image-zoom-trigger" type="button" data-full="../assets/images/cowrie/attacker-commands.png" data-caption="Captured attacker command activity inside the honeypot.">
+            <img src="../assets/images/cowrie/attacker-commands.png" alt="Captured attacker commands">
+          </button>
           <figcaption>Captured attacker command activity inside the honeypot.</figcaption>
         </figure>
       </div>
@@ -104,5 +114,54 @@
     </section>
   </main>
 
+  <div class="image-modal" id="imageModal" aria-hidden="true">
+    <button class="image-modal-close" type="button" aria-label="Close enlarged image">&times;</button>
+    <figure class="image-modal-content">
+      <img src="" alt="">
+      <figcaption></figcaption>
+    </figure>
+  </div>
+
+  <script>
+    const zoomButtons = document.querySelectorAll(".image-zoom-trigger");
+    const imageModal = document.getElementById("imageModal");
+    const modalImage = imageModal.querySelector("img");
+    const modalCaption = imageModal.querySelector("figcaption");
+    const modalClose = imageModal.querySelector(".image-modal-close");
+
+    function openImageModal(button) {
+      const image = button.querySelector("img");
+
+      modalImage.src = button.dataset.full;
+      modalImage.alt = image.alt;
+      modalCaption.textContent = button.dataset.caption || image.alt;
+      imageModal.classList.add("open");
+      imageModal.setAttribute("aria-hidden", "false");
+      modalClose.focus();
+    }
+
+    function closeImageModal() {
+      imageModal.classList.remove("open");
+      imageModal.setAttribute("aria-hidden", "true");
+      modalImage.src = "";
+    }
+
+    zoomButtons.forEach((button) => {
+      button.addEventListener("click", () => openImageModal(button));
+    });
+
+    modalClose.addEventListener("click", closeImageModal);
+    imageModal.addEventListener("click", (event) => {
+      if (event.target === imageModal) {
+        closeImageModal();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && imageModal.classList.contains("open")) {
+        closeImageModal();
+      }
+    });
+  </script>
 </body>
 </html>
